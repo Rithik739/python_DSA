@@ -18,4 +18,3 @@ while currentNode:
     currentNode = currentNode.next
 print("null")
 
-
