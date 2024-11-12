@@ -7,3 +7,29 @@ def bubble_sort(arr):
 arr = [1, 2, 7, 3, 5, 9]
 bubble_sort(arr)
 print(arr)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Example Walkthrough
+Given the list [1, 2, 7, 3, 5, 9]:
+
+First Pass (i = 0):
+
+Compare 1 and 2 → no swap needed.
+Compare 2 and 7 → no swap needed.
+Compare 7 and 3 → swap → [1, 2, 3, 7, 5, 9]
+Compare 7 and 5 → swap → [1, 2, 3, 5, 7, 9]
+Compare 7 and 9 → no swap needed.
+After this pass, 9 is in the correct position at the end.
+
+Second Pass (i = 1):
+
+Compare 1 and 2 → no swap needed.
+Compare 2 and 3 → no swap needed.
+Compare 3 and 5 → no swap needed.
+Compare 5 and 7 → no swap needed.
+The list remains [1, 2, 3, 5, 7, 9], and now 7 is also correctly positioned.
+
+Remaining Passes:
+
+No further swaps are needed because the list is now fully sorted.
+Final Output: [1, 2, 3, 5, 7, 9]
